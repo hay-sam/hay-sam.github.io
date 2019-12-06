@@ -1,0 +1,41 @@
+body{
+  font-family: Roboto,Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/*********
+  Main
+ *********/
+#main{
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: blue;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column
+}
+/*********
+  Sidebar
+ *********/
+#sidebar{
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 350px;
+  background-color: aqua;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+#sidebar p {
+}
+#my-face{
+  width: 175px;
+  height: auto;
+  border-radius: 50%;
+}
+#skills{
+
+}
