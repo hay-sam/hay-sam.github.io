@@ -2,18 +2,18 @@
   "name": "me",
   "version": "1.0.0",
   "description": "My Portfolio Website",
-  "main": "public/index.html",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hay-sam/me.git"
+    "url": "git+https://github.com/hay-sam/hay-sam.github.io/.git"
   },
   "author": "Haley Sambursky",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hay-sam/me/issues"
+    "url": "https://github.com/hay-sam/hay-sam.github.io/issues"
   },
-  "homepage": "https://github.com/hay-sam/me#readme"
+  "homepage": "https://github.com/hay-sam/hay-sam.github.io"
 }

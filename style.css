@@ -1,5 +1,16 @@
+:root {
+  --color1: rgba(250, 243, 221, 1);
+  --color2: rgba(200, 213, 185, 1);
+  --color3: rgba(143, 192, 169, 1);
+  --color4: rgba(104, 176, 171, 1);
+  --color5: rgba(105, 109, 125, 1);
+
+}
+
+
+
 body{
-  font-family: Roboto,Verdana, Geneva, Tahoma, sans-serif;
+  font-family:  Geneva, Tahoma, sans-serif;
   display: flex;
   height: 100vh;
   margin: 0;
@@ -11,10 +22,14 @@ body{
 #main{
   flex-grow: 1;
   flex-shrink: 1;
-  background-color: blue;
+  background-color: var(--color4);
   overflow-y: auto;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  padding: 10px;
+}
+#main h3{
+  color: var(--color5)
 }
 /*********
   Sidebar
@@ -23,17 +38,22 @@ body{
   flex-grow: 0;
   flex-shrink: 0;
   width: 350px;
-  background-color: aqua;
+  background-color: var(--color5);
   text-align: center;
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
+#sidebar h4{
+  color: white;
+}
 #sidebar p {
+  color: var(--color4);
 }
 #my-face{
   width: 175px;
   height: auto;
+  border: var(--color4) solid 4px;
   border-radius: 50%;
 }
 #skills{
