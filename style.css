@@ -19,8 +19,13 @@ body{
   font-family:  Geneva, Tahoma, sans-serif;
   display: flex;
   height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
+}
+
+.shadow{
+  box-shadow: 2px 2px 4px var(--color9);
 }
 /*********
   Main
@@ -52,7 +57,7 @@ body{
 
 }
 #main section{
-  padding: 10px;
+  padding: 20px;
 }
 #all-projects{
   display: flex;
@@ -61,9 +66,10 @@ body{
 .one-project{
   display: flex;
   justify-content: center;
+  margin: 20px 0px;
 }
 .one-project > * {
-  margin: 5px;
+  margin: 6px;
 }
 .project-img img{
   height: 300px;
@@ -116,8 +122,6 @@ i{
 }
 #contact{
   padding: 10px;
-  border: solid white 3px;
-  border-radius: 10px;
 }
 #contact h4{
   margin-top: 0px;
@@ -133,4 +137,9 @@ i{
 }
 #sidebar .contact-row a{
   color: var(--color4)
+}
+
+
+#main .contact-row{
+  justify-content: flex-start;
 }
