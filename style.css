@@ -5,6 +5,12 @@
   --color4: rgba(104, 176, 171, 1);
   --color5: rgba(105, 109, 125, 1);
 
+  --color6: rgba(90, 147, 103, 1);
+  --color7: rgba(92, 171, 125, 1);
+  --color8: rgba(74, 219, 200, 1);
+  --color9: rgba(81, 79, 89, 1);
+  --color10: rgba(29, 17, 40, 1);
+
 }
 
 
@@ -26,10 +32,37 @@ body{
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  color: var(--color10)
 }
 #main h3{
-  color: var(--color5)
+  color: var(--color10)
+}
+#main h4{
+  color: var(--color10)
+}
+#main .break{
+  margin: 20px 0px;
+  background-color: white;
+  height: 20px;
+  padding: 0px;
+  width: 100%;
+  border-top-width: 4px;
+  border-bottom-width: 4px;
+  border-style: double;
+  border-color: blue;
+
+}
+#all-projects{
+  display: flex;
+  flex-direction: column;
+}
+.one-project{
+
+}
+#skills{
+}
+section{
+  min-height: 300px;;
 }
 /*********
   Sidebar
@@ -38,14 +71,24 @@ body{
   flex-grow: 0;
   flex-shrink: 0;
   width: 350px;
-  background-color: var(--color5);
+  background-color: var(--color10);
   text-align: center;
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
+#sidebar h3{
+  color: white;
+}
 #sidebar h4{
   color: white;
+}
+#sidebar a{
+  color: white;
+  text-decoration: none;
+}
+#sidebar a:hover{
+  text-decoration: underline;
 }
 #sidebar p {
   color: var(--color4);
@@ -56,6 +99,4 @@ body{
   border: var(--color4) solid 4px;
   border-radius: 50%;
 }
-#skills{
 
-}
