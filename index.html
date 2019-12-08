@@ -4,41 +4,40 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width initial-scale=1.0'>
     <title>Haley Sambursky</title>
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Animate.css" />
     <script defer src="index.js"></script>
   </head>
   <body>
    <div id="sidebar">
-    <div id="about">
-      <h3>
+     <a name="top"></a>
+     <div id="me">
+      <h3 id="hi">
         Hi I'm Haley Sambursky!
       </h3>
       <img id="my-face" src="Me.jpeg"/>
-      <h4>
-        <a href="#bio">About Me</a>
-      </h4>
-      <h4><a href="#skills">Skills</a></h4>
-      <h4><a href="#projects">Projects</a></h4>
+     </div>
+      <nav>
+        <h4 id="bioLink">
+          <a href="#bio">About Me</a>
+        </h4>
+        <h4 id="skillsLink"><a href="#skills">Skills</a></h4>
+        <h4 id="projectsLink"><a href="#projects">Projects</a></h4>
+      </nav>
       <div id="contact">
         <h4>Get in Touch</h4>
         <div class="contact-row">
           <i class="fab fa-github"></i>
-          <p><a href="https://github.com/hay-sam">
+          <p><a href="https://github.com/hay-sam" target="_blank" rel="noopener">
             @hay-sam
           </a></p>
         </div>
         <div class="contact-row">
-            <i class="fas fa-envelope"></i>
-            <p><a href="mailto: haley.p.sambursky@gmail.com">Email</a></p>
-        </div>
-        <div class="contact-row">
             <i class="fab fa-linkedin"></i>
-            <p><a href="https://www.linkedin.com/in/haley-sambursky/">Linkedin</a></p>
+            <p><a href="https://www.linkedin.com/in/haley-sambursky/" target="_blank" rel="noopener">Linkedin</a></p>
         </div>
-      </div>
     </div>
 
    </div>
@@ -48,33 +47,81 @@
         <h2>
           About Me
         </h2>
-        <p>I am a full-stack developer. I love the process of building up a robust application from nothing into something amazing. I got my start in coding</p>
+        <p>While studying Biochemistry in college I decided to take a computer science class for fun and discovered my passion for programming. It was important to me to pursue that passion, so after graduating I decided to enroll in the Grace Hopper Program at FullStack Academy to ensure I would have a foundation to start my career as a Software Engineer. I am looking forward to being a part of a company with a culture of innovation, and diversity.</p>
       </section>
       <div class="break" >
       <a name="skills" >
       <section id="skills">
-        <h2>skills</h2>
-        <p>Proficient: <em>Javascript, Node.js, React, Redux, Express, Sequelize, postgreSQL, HTML, CSS</em></p>
-        <p>Familiar: <em> git, Heroku, D3.js, Material-UI, Python, Java, chrome API's, Mocha, Chai, Jasmine</em></p>
+        <h2>Skills</h2>
+        <p>Proficient: <em>Python, Typescript, Javascript, Node.js, Flask, SQLAlchemy, PostgreSQL, Express</em></p>
+        <p>Familiar: <em>Twilio, pytest, Terraform, Datadog, Ember, LogDNA, Pact, Kafka, React, HTML5, CSS3, Git and Github Workflows, Jest, Mocha, Chai, knex, Docker, kubernetes</em></p>
+        <p>Some Experience: <em>Java, PassportJs, Stripe, chrome API's, Bootstrap, Jasmine, React-Redux, Material-UI, Heroku, D3.js</em></p>
       </section>
       <div class="break">
-      <a name= "projects" >
+      <a name= "projects" ></a>
       <section id="all-projects">
         <h2>Projects</h2>
-        <div class="one-project">
-          <div class="project-img">
-            <img src="podium-home.png"/>
-          </div>
+        <div class="one-project" id="Podium">
+          <a target="_blank" rel="noopener" href="https://podium--app.herokuapp.com/">
+            <img src="podium-home.png" class="shadow1 shadow project-img"/>
+          </a>
           <div class="project-text">
             <h3 class="project-title">Podium</h3>
             <p class="project-description">
-              Podium is a personalized solution. Graphs, D3, webspeech api. SUper lovely interface
+              Podium is a web app designed to empower users to improve their public speaking skills. After making a recording on the website, a user will receive immediate feedback on key statistics, which they can use to improve future speeches. Developed in 2 weeks with a team of 4.
             </p>
-            <p>Tech: ? idk does this get its own P</p>
-            <div class="contact-row"><i class="fas fa-external-link-alt"></i><p>Try it Out</p></div><div class="contact-row"><i class="fab fa-github-alt"></i><p>View Source</p></div>
+            <p>Tech: Javascript, React, Redux, D3, Material-UI, Web Speech API, Node, Express, Sequelize, postgreSQL</p>
+            <a target="_blank" rel="noopener" href="https://podium--app.herokuapp.com/">
+              <div class="contact-row"><i class="fas fa-external-link-alt"></i><p>Try it Out</p></div>
+            </a>
+            <a target="_blank" rel="noopener" href="https://github.com/hay-sam/Podium">
+              <div class="contact-row"><i class="fab fa-github"></i><p>View Source</p></div>
+            </a>
+          </div>
+        </div>
+        <div class="one-project reverse" id="LinkHub">
+          <a target="_blank" rel="noopener" href="https://link--hub.herokuapp.com/">
+              <img src="LinkHub.jpg" class="shadow2 shadow project-img"/>
+            </a>
+          <div class="project-text">
+            <h3 class="project-title">LinkHub</h3>
+            <p class="project-description">
+              LinkHub is a website and chrome extension designed to let users save links from across the web. Users can tag posts in the extension, or while viewing the previews for easy lookup later. Web scraping was used to gather information to generate visually appealing previews.
+            </p>
+            <p>Tech: Javascript, React, Redux, Material-UI, Node, Express, Sequelize, postgreSQL, chrome</p>
+            <a target="_blank" rel="noopener" href="https://link--hub.herokuapp.com/">
+              <div class="contact-row"><i class="fas fa-external-link-alt"></i><p>Try it Out</p></div>
+            </a>
+            <a target="_blank" rel="noopener" href="https://github.com/hay-sam/LinkHub-webpage">
+              <div class="contact-row"><i class="fab fa-github"></i><p>View Source(Webpage)</p></div>
+            </a>
+            <a target="_blank" rel="noopener" href="https://github.com/hay-sam/LinkHub-extension">
+              <div class="contact-row"><i class="fab fa-github"></i><p>View Source(Extension)</p></div>
+            </a>
+          </div>
+
+        </div>
+        <div class="one-project" id="Grace-Shopper">
+          <a target="_blank" rel="noopener" href="https://cinnamon-post-crunch.herokuapp.com/">
+            <img src="grace-shopper.png" class="shadow1 shadow project-img"/>
+          </a>
+          <div class="project-text">
+            <h3 class="project-title">Grace Shopper</h3>
+            <p class="project-description">
+              An fullstack e-commerce site selling cereal. I built this project in a team of 3 over the course of a week. I designed the cart and checkout features, for both guests and signed in users. Integrated the website with Stripe to accept payments.
+            </p>
+            <p>Tech: Javascript, React, Redux, Node, Express, Sequelize, postgreSQL</p>
+            <a target="_blank" rel="noopener" href="https://cinnamon-post-crunch.herokuapp.com/">
+              <div class="contact-row"><i class="fas fa-external-link-alt"></i><p>Try it Out</p></div>
+            </a>
+            <a target="_blank" rel="noopener" href="https://github.com/hay-sam/grace-shopper">
+              <div class="contact-row"><i class="fab fa-github"></i><p>View Source</p></div>
+            </a>
           </div>
         </div>
       </section>
+      <div class="break hideWhenBig"></div>
+      <a class="returnTop hideWhenBig" href="#top" ><i class="fas fa-arrow-up"></i><p>Return to Top</p></a>
     </div>
   </body>
 </html>
