@@ -42,25 +42,37 @@ body{
 }
 #main .break{
   margin: 20px 0px;
-  background-color: white;
-  height: 20px;
+  background-color:var(--color10);
+  height: 10px;
   padding: 0px;
   width: 100%;
-  border-top-width: 4px;
-  border-bottom-width: 4px;
-  border-style: double;
-  border-color: blue;
+  border-width: 5px 0px;;
+  border-style: solid;
+  border-color: var(--color10);
 
+}
+#main section{
+  padding: 10px;
 }
 #all-projects{
   display: flex;
   flex-direction: column;
 }
 .one-project{
-
+  display: flex;
+  justify-content: center;
+}
+.one-project > * {
+  margin: 5px;
+}
+.project-img img{
+  height: 300px;
+  width: auto;
+  object-fit: contain;
 }
 #skills{
 }
+
 section{
   min-height: 300px;;
 }
@@ -70,7 +82,7 @@ section{
 #sidebar{
   flex-grow: 0;
   flex-shrink: 0;
-  width: 350px;
+  width: 300px;
   background-color: var(--color10);
   text-align: center;
   display: flex;
@@ -99,4 +111,26 @@ section{
   border: var(--color4) solid 4px;
   border-radius: 50%;
 }
-
+i{
+  color: white;
+}
+#contact{
+  padding: 10px;
+  border: solid white 3px;
+  border-radius: 10px;
+}
+#contact h4{
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+.contact-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-row > *{
+  margin: 5px;
+}
+#sidebar .contact-row a{
+  color: var(--color4)
+}

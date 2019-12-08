@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width initial-scale=1.0'>
     <title>Haley Sambursky</title>
-    <meta http-equiv="Refresh" content="2; url=index.html">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="Animate.css" />
@@ -20,13 +20,24 @@
       <h4>
         <a href="#bio">About Me</a>
       </h4>
-      <h4>Skills</h4>
-      <h4>Projects</h4>
+      <h4><a href="#skills">Skills</a></h4>
+      <h4><a href="#projects">Projects</a></h4>
       <div id="contact">
         <h4>Get in Touch</h4>
-        <p>email</p>
-        <p>linkedin</p>
-        <p>github</p>
+        <div class="contact-row">
+          <i class="fab fa-github"></i>
+          <p><a href="https://github.com/hay-sam">
+            @hay-sam
+          </a></p>
+        </div>
+        <div class="contact-row">
+            <i class="fas fa-envelope"></i>
+            <p><a href="mailto: haley.p.sambursky@gmail.com">Email</a></p>
+        </div>
+        <div class="contact-row">
+            <i class="fab fa-linkedin"></i>
+            <p><a href="https://www.linkedin.com/in/haley-sambursky/">Linkedin</a></p>
+        </div>
       </div>
     </div>
 
@@ -34,22 +45,34 @@
     <div id="main">
       <section id="bio">
         <a name="bio">
-        <h4>
+        <h2>
           About Me
-        </h4>
+        </h2>
         <p>I am a full-stack developer. I love the process of building up a robust application from nothing into something amazing. I got my start in coding</p>
       </section>
-      <div class="break" ></div>
+      <div class="break" >
+      <a name="skills" >
       <section id="skills">
-        <h4>skills</h4>
+        <h2>skills</h2>
         <p>Proficient: <em>Javascript, Node.js, React, Redux, Express, Sequelize, postgreSQL, HTML, CSS</em></p>
         <p>Familiar: <em> git, Heroku, D3.js, Material-UI, Python, Java, chrome API's, Mocha, Chai, Jasmine</em></p>
       </section>
-      <div class="break"></div>
+      <div class="break">
+      <a name= "projects" >
       <section id="all-projects">
-        <h3>Projects</h3>
+        <h2>Projects</h2>
         <div class="one-project">
-
+          <div class="project-img">
+            <img src="podium-home.png"/>
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Podium</h3>
+            <p class="project-description">
+              Podium is a personalized solution. Graphs, D3, webspeech api. SUper lovely interface
+            </p>
+            <p>Tech: ? idk does this get its own P</p>
+            <div class="contact-row"><i class="fas fa-external-link-alt"></i><p>Try it Out</p></div><div class="contact-row"><i class="fab fa-github-alt"></i><p>View Source</p></div>
+          </div>
         </div>
       </section>
     </div>
