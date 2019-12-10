@@ -174,36 +174,3 @@ i{
     height: 250px;
   }
 }
-/*
-@media(max-width: 1000px){
-  body{
-    flex-direction: column;
-  }
-  #sidebar{
-    width: 100vw;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  #about{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  #my-face{
-    height: 30px;
-    width: auto;
-  }
-  #sidebar nav{
-    display: flex;
-    align-items: center;
-  }
-  #sidebar nav > *{
-    margin: 3px;
-  }
-  #sidebar #contact {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-} */
