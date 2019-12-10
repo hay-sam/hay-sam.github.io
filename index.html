@@ -13,16 +13,17 @@
   </head>
   <body>
    <div id="sidebar">
-    <div id="about">
-      <h3>
+      <h3 id="hi">
         Hi I'm Haley Sambursky!
       </h3>
       <img id="my-face" src="Me.jpeg"/>
-      <h4>
-        <a href="#bio">About Me</a>
-      </h4>
-      <h4><a href="#skills">Skills</a></h4>
-      <h4><a href="#projects">Projects</a></h4>
+      <nav>
+        <h4 id="bioLink">
+          <a href="#bio">About Me</a>
+        </h4>
+        <h4 id="skillsLink"><a href="#skills">Skills</a></h4>
+        <h4 id="projectsLink"><a href="#projects">Projects</a></h4>
+      </nav>
       <div id="contact">
         <h4>Get in Touch</h4>
         <div class="contact-row">
@@ -39,7 +40,6 @@
             <i class="fab fa-linkedin"></i>
             <p><a href="https://www.linkedin.com/in/haley-sambursky/" target="_blank" rel="noopener">Linkedin</a></p>
         </div>
-      </div>
     </div>
 
    </div>
@@ -62,10 +62,10 @@
       <a name= "projects" ></a>
       <section id="all-projects">
         <h2>Projects</h2>
-        <div class="one-project">
-          <div class="project-img">
-            <img src="podium-home.png" class="shadow"/>
-          </div>
+        <div class="one-project" id="Podium">
+          <a target="_blank" rel="noopener" href="https://podium--app.herokuapp.com/"><div class="project-img">
+            <img src="podium-home.png" class="shadow1 shadow"/>
+          </div></a>
           <div class="project-text">
             <h3 class="project-title">Podium</h3>
             <p class="project-description">
@@ -75,43 +75,46 @@
             <a target="_blank" rel="noopener" href="https://podium--app.herokuapp.com/">
               <div class="contact-row"><i class="fas fa-external-link-alt"></i><p>Try it Out</p></div>
             </a>
-            <a target="_blank" rel="noopener">
+            <a target="_blank" rel="noopener" href="https://github.com/hay-sam/Podium">
               <div class="contact-row"><i class="fab fa-github"></i><p>View Source</p></div>
             </a>
           </div>
         </div>
-        <div class="one-project">
-          <div class="project-img">
-            <img src="podium-home.png" class="shadow"/>
-          </div>
+        <div class="one-project" id="LinkHub">
           <div class="project-text">
             <h3 class="project-title">LinkHub</h3>
             <p class="project-description">
               Podium is a personalized solution. Graphs, D3, webspeech api. SUper lovely interface
             </p>
             <p>Tech: ? idk does this get its own P</p>
-            <a target="_blank" rel="noopener" href="https://podium--app.herokuapp.com/">
+            <a target="_blank" rel="noopener" href="https://link--hub.herokuapp.com/">
               <div class="contact-row"><i class="fas fa-external-link-alt"></i><p>Try it Out</p></div>
             </a>
-            <a target="_blank" rel="noopener">
-              <div class="contact-row"><i class="fab fa-github"></i><p>View Source</p></div>
+            <a target="_blank" rel="noopener" href="https://github.com/hay-sam/LinkHub-webpage">
+              <div class="contact-row"><i class="fab fa-github"></i><p>View Source(Webpage)</p></div>
+            </a>
+            <a target="_blank" rel="noopener" href="https://github.com/hay-sam/LinkHub-extension">
+              <div class="contact-row"><i class="fab fa-github"></i><p>View Source(Extension)</p></div>
             </a>
           </div>
+          <a target="_blank" rel="noopener" href="https://link--hub.herokuapp.com/"><div class="project-img">
+              <img src="LinkHub.jpg" class="shadow2 shadow"/>
+            </div></a>
         </div>
-        <div class="one-project">
-          <div class="project-img">
-            <img src="podium-home.png" class="shadow"/>
-          </div>
+        <div class="one-project" id="Grace-Shopper">
+          <a target="_blank" rel="noopener" href="https://cinnamon-post-crunch.herokuapp.com/"><div class="project-img">
+            <img src="grace-shopper.png" class="shadow1 shadow"/>
+          </div></a>
           <div class="project-text">
             <h3 class="project-title">Grace Shopper</h3>
             <p class="project-description">
-              Podium is a personalized solution. Graphs, D3, webspeech api. SUper lovely interface
+              An fullstack e-commerce site selling cereal. I built this project in a team of 3 over the course of a week. I designed the cart and checkout features, for both guests and signed in users. Integrated the website with Stripe to accept payments.
             </p>
-            <p>Tech: ? idk does this get its own P</p>
-            <a target="_blank" rel="noopener" href="https://podium--app.herokuapp.com/">
+            <p>Tech: Javascript, React, Redux, Node, Express, Sequelize, postgreSQL</p>
+            <a target="_blank" rel="noopener" href="https://cinnamon-post-crunch.herokuapp.com/">
               <div class="contact-row"><i class="fas fa-external-link-alt"></i><p>Try it Out</p></div>
             </a>
-            <a target="_blank" rel="noopener">
+            <a target="_blank" rel="noopener" href="https://github.com/hay-sam/grace-shopper">
               <div class="contact-row"><i class="fab fa-github"></i><p>View Source</p></div>
             </a>
           </div>

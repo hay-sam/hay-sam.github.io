@@ -23,9 +23,15 @@ body{
   margin: 0;
   padding: 0;
 }
+.shadow:hover{
+  opacity: .8;
+}
 
-.shadow{
-  box-shadow: 2px 2px 4px var(--color9);
+.shadow1{
+  box-shadow: 2px 2px 5px var(--color9);
+}
+.shadow2{
+  box-shadow: -2px 2px 5px var(--color9);
 }
 /*********
   Main
@@ -83,6 +89,9 @@ body{
   width: auto;
   object-fit: contain;
 }
+.project-title {
+  margin-block-start: 0em;
+}
 #skills{
 }
 
@@ -95,12 +104,13 @@ section{
 #sidebar{
   flex-grow: 0;
   flex-shrink: 0;
-  width: 300px;
+  width: 280px;
   background-color: var(--color10);
   text-align: center;
   display: flex;
   flex-direction: column;
   padding: 10px;
+  align-items: center;
 }
 #sidebar h3{
   color: white;
@@ -150,3 +160,50 @@ i{
 #main .contact-row{
   justify-content: flex-start;
 }
+
+@media(max-width: 1170px){
+  .project-text{
+    font-size: 90%;
+  }
+}
+@media(max-width: 1100px){
+  .project-text{
+    font-size: 80%;
+  }
+  .project-img img{
+    height: 250px;
+  }
+}
+/*
+@media(max-width: 1000px){
+  body{
+    flex-direction: column;
+  }
+  #sidebar{
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #my-face{
+    height: 30px;
+    width: auto;
+  }
+  #sidebar nav{
+    display: flex;
+    align-items: center;
+  }
+  #sidebar nav > *{
+    margin: 3px;
+  }
+  #sidebar #contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+} */
