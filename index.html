@@ -13,10 +13,13 @@
   </head>
   <body>
    <div id="sidebar">
+     <a name="top"></a>
+     <div id="me">
       <h3 id="hi">
         Hi I'm Haley Sambursky!
       </h3>
       <img id="my-face" src="Me.jpeg"/>
+     </div>
       <nav>
         <h4 id="bioLink">
           <a href="#bio">About Me</a>
@@ -54,7 +57,7 @@
       <div class="break" >
       <a name="skills" >
       <section id="skills">
-        <h2>skills</h2>
+        <h2>Skills</h2>
         <p>Proficient: <em>Javascript, Node.js, React, Redux, Express, Sequelize, postgreSQL, HTML, CSS</em></p>
         <p>Familiar: <em> git, Heroku, D3.js, Material-UI, Python, Java, chrome API's, Mocha, Chai, Jasmine</em></p>
       </section>
@@ -80,7 +83,10 @@
             </a>
           </div>
         </div>
-        <div class="one-project" id="LinkHub">
+        <div class="one-project reverse" id="LinkHub">
+          <a target="_blank" rel="noopener" href="https://link--hub.herokuapp.com/"><div class="project-img">
+              <img src="LinkHub.jpg" class="shadow2 shadow"/>
+            </div></a>
           <div class="project-text">
             <h3 class="project-title">LinkHub</h3>
             <p class="project-description">
@@ -97,9 +103,7 @@
               <div class="contact-row"><i class="fab fa-github"></i><p>View Source(Extension)</p></div>
             </a>
           </div>
-          <a target="_blank" rel="noopener" href="https://link--hub.herokuapp.com/"><div class="project-img">
-              <img src="LinkHub.jpg" class="shadow2 shadow"/>
-            </div></a>
+
         </div>
         <div class="one-project" id="Grace-Shopper">
           <a target="_blank" rel="noopener" href="https://cinnamon-post-crunch.herokuapp.com/"><div class="project-img">
@@ -120,6 +124,8 @@
           </div>
         </div>
       </section>
+      <div class="break hideWhenBig"></div>
+      <a class="returnTop hideWhenBig" href="#top" ><i class="fas fa-arrow-up"></i><p>Return to Top</p></a>
     </div>
   </body>
 </html>
