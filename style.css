@@ -64,9 +64,14 @@ body{
 #main section{
   padding: 20px;
 }
+#main section h2{
+  text-align: center;
+}
+
 #all-projects{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .one-project{
   display: flex;
@@ -86,10 +91,9 @@ body{
 .one-project a p:hover{
   text-decoration: underline;
 }
-.project-img img{
+img.project-img {
   height: 300px;
   width: auto;
-  object-fit: contain;
 }
 .project-title {
   margin-block-start: 0em;
@@ -106,12 +110,12 @@ section{
 #sidebar{
   flex-grow: 0;
   flex-shrink: 0;
+  padding: 10px;
   width: 280px;
   background-color: var(--color10);
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 10px;
   align-items: center;
 }
 #sidebar h3{
@@ -191,7 +195,7 @@ a.returnTop p:hover{
   #main{
     font-size: 80%;
   }
-  .project-img img{
+  img.project-img{
     height: 250px;
   }
 }
@@ -201,9 +205,15 @@ a.returnTop p:hover{
     flex-direction: column;
     align-items: center;
   }
-  .project-img img{
+  .project-text{
+    align-self: flex-start;
+  }
+  img.project-img{
     height:auto;
-    width: 90%;
+    width: 100%;
+  }
+  .shadow2{
+    box-shadow: 2px 2px 5px var(--color9);
   }
 
 }
@@ -221,8 +231,9 @@ a.returnTop p:hover{
     width: 100vw;
   }
   #sidebar{
+    padding: 0px;
     width: 100vw;
-   height: unset;
+    height: unset;
   }
 
   #main{
@@ -243,4 +254,9 @@ a.returnTop p:hover{
     border-color: var(--color10);
 
   }
+  #main section h2{
+    width: 100%;
+    text-align: center;
+  }
+
 }
