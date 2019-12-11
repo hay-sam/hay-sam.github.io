@@ -14,7 +14,6 @@
 }
 
 
-
 body{
   font-family:  Geneva, Tahoma, sans-serif;
   display: flex;
@@ -72,7 +71,10 @@ body{
 .one-project{
   display: flex;
   justify-content: center;
-  margin: 20px 0px;
+  margin: 30px 0px;
+}
+.reverse{
+  flex-direction: row-reverse;
 }
 .one-project > * {
   margin: 6px;
@@ -96,7 +98,7 @@ body{
 }
 
 section{
-  min-height: 300px;;
+  min-height: 250px;;
 }
 /*********
   Sidebar
@@ -160,50 +162,85 @@ i{
 #main .contact-row{
   justify-content: flex-start;
 }
+.hideWhenBig{
+  display: none;
+}
+.returnTop{
 
+  width: 100vw;
+  padding: 5px 0px;
+  text-align: center;
+  background-color: var(--color10);
+  color: var(--color4);
+  display: none;
+}
+a.returnTop{
+  color: var(--color4);
+  text-decoration: none;
+}
+a.returnTop p:hover{
+  text-decoration: underline;
+
+}
 @media(max-width: 1170px){
-  .project-text{
+  #main{
     font-size: 90%;
   }
 }
 @media(max-width: 1100px){
-  .project-text{
+  #main{
     font-size: 80%;
   }
   .project-img img{
     height: 250px;
   }
 }
-/*
+
 @media(max-width: 1000px){
-  body{
+  .one-project{
     flex-direction: column;
+    align-items: center;
+  }
+  .project-img img{
+    height:auto;
+    width: 90%;
+  }
+
+}
+
+
+@media(max-width: 500px){
+  .hideWhenBig{
+    display: unset;
+  }
+  a.returnTop{
+    display: block;
+  }
+  body{
+    display: block;
+    width: 100vw;
   }
   #sidebar{
     width: 100vw;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+   height: unset;
   }
-  #about{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+  #main{
+    width: 100vw;
+    overflow-y: unset;
   }
-  #my-face{
-    height: 30px;
-    width: auto;
+  #main section{
+    background-color: var(--color4);
   }
-  #sidebar nav{
-    display: flex;
-    align-items: center;
+  #main .break{
+    margin: 0px;
+    background-color:var(--color10);
+    height: 10px;
+    padding: 20px 0px;
+    width: 100%;
+    border-width: 5px 0px;;
+    border-style: solid;
+    border-color: var(--color10);
+
   }
-  #sidebar nav > *{
-    margin: 3px;
-  }
-  #sidebar #contact {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-} */
+}
